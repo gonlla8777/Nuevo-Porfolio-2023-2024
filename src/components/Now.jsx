@@ -1,0 +1,32 @@
+const Now = () => {
+  return (
+    <div className="h-auto">
+      <h1 className="font-bold font-sans text-7xl p-2">Now</h1>
+      <h2 className="font-light font-sans  text-2xl p-4">
+        Soy un programador apasionado por la tecnología y el desarrollo de
+        software. Aunque mi formación académica inicial fue en ingeniería civil
+        y tengo experiencia en el campo de la construcción, decidí cambiar el
+        rumbo de mi vida al sentirme atraído por la programación. Durante mi
+        tiempo como estudiante de ingeniería civil, adquirí sólidos
+        conocimientos en diseño estructural y gestión de proyectos, lo que me
+        permitió ejercer como gasista y obtener experiencia práctica en el
+        campo. Sin embargo, mi pasión por la tecnología y el deseo de explorar
+        nuevas oportunidades me llevaron a embarcarme en un bootcamp de
+        programación. Durante ese programa intensivo, desarrollé habilidades en
+        diferentes lenguajes de programación y herramientas técnicas, y descubrí
+        mi afinidad por el desarrollo de software. A través de mi experiencia en
+        la construcción y mi capacidad para resolver problemas complejos, he
+        desarrollado habilidades transferibles, como el pensamiento analítico y
+        la atención al detalle, que son valiosas en el campo de la programación.
+        Estoy emocionado por aplicar mis conocimientos y experiencia en un
+        entorno laboral enfocado en el desarrollo de software. Mi objetivo es
+        seguir creciendo profesionalmente, aprender nuevas tecnologías y
+        contribuir de manera significativa en proyectos desafiantes. Estoy listo
+        para enfrentar nuevos retos y demostrar mi valía como programador
+        proactivo y motivado, combinando mis habilidades en la construcción con
+        mi pasión por la programación para ofrecer soluciones innovadoras.
+      </h2>
+    </div>
+  );
+};
+export default Now;
