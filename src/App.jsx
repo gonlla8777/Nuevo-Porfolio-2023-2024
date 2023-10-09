@@ -7,7 +7,7 @@ function App() {
   const dark =
     "dark:bg-gradient-to-b from-sky-950 from-10% via-cyan-950 via-30% to-slate-900 to-90% dark:text-white min-h-screen";
   return (
-    <div className=" text-blue-950  bg-gradient-to-b from-stone-50 from-10% via-lime-50 via-30% to-pink-50 to-90% dark:bg-gradient-to-b dark:from-sky-950 dark:from-10% dark:via-cyan-950 dark:via-30% dark:to-slate-900 dark:to-90% dark:text-blue-200  min-h-screen">
+    <div className=" text-blue-950  bg-gradient-to-b from-stone-50 from-10% via-lime-50 via-30% to-pink-50 to-90% dark:bg-gradient-to-b dark:from-sky-950 dark:from-10% dark:via-cyan-950 dark:via-30% dark:to-slate-900 dark:to-90% dark:text-white  min-h-screen">
       <AppRouter />
     </div>
   );

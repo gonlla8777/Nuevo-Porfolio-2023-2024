@@ -1,6 +1,6 @@
 const Now = () => {
   return (
-    <div className="h-auto">
+    <div id="now" className="h-auto">
       <h1 className="font-bold font-sans text-7xl p-2">Now</h1>
       <h2 className="font-light font-sans  text-2xl p-4">
         Soy un programador apasionado por la tecnología y el desarrollo de
