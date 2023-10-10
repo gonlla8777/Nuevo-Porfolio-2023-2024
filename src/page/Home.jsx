@@ -13,19 +13,37 @@ const Home = () => {
   return (
     <>
       <div>
-        <BtnDarkMode className="fixed top-0 right-0 bg-white" />
+        <BtnDarkMode className="fixed block top-0 right-0 " />
       </div>
+      <button className="fixed block bottom-5 right-5  ">
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 14"
+          onClick={() => handleScrollToSection("now")}
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 13V1m0 0L1 5m4-4 4 4"
+          />
+        </svg>
+      </button>
 
       <div className="container mx-auto xl:grid xl:grid-cols-2 ">
-        <div className="xl:fixed top-0 Left-0 p-4 ">
+        <div className="xl:fixed top-0 Left-0 p-4 h-screen">
           <h1 className="font-bold font-sans  text-8xl animate-fade-up">
             Hello World
           </h1>
-          <h2 className="font-light font-sans  text-2xl p-4">
+          <h2 id="top" className="font-light font-sans  text-2xl p-4">
             Gonzalo Llanos - Fullstack Developer
           </h2>
           <h3
-            className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4 hover:text-cyan-400 hover:animate-pulse "
+            className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4  hover:text-cyan-400 hover:animate-pulse "
             onClick={() => handleScrollToSection("aboutMe")}
           >
             About me
