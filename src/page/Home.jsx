@@ -20,16 +20,16 @@ const Home = () => {
   };
   return (
     <>
-      <div className="relative container mx-auto xl:grid xl:grid-cols-2 ">
-        <div className="xl:fixed top-0 Left-0 p-4 h-screen">
-          <h1 className="font-bold font-sans  text-8xl animate-fade-up">
+      <div className="relative container mx-auto xl:grid xl:grid-cols-3  xl:grid-flow-dense">
+        <div className="xl:fixed xl:top-5 xl:left-10 row-span-2 h-screen">
+          <h1 className="font-bold font-sans   text-8xl animate-fade-up">
             Hello World
           </h1>
           <div>
             <h2 className="font-light font-sans  text-2xl p-4">
               Gonzalo Llanos - Fullstack Developer
             </h2>
-            <div className=" grid w-1/3   ">
+            <div className=" grid min:w-1/3   ">
               <button
                 className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4  hover:text-cyan-400 hover:animate-pulse text-left "
                 onClick={() => handleScrollToSection("aboutMe")}
@@ -58,20 +58,20 @@ const Home = () => {
           </div>
         </div>
         <div></div>
-        <div className="h-full">
-          <div className="screen">
+        <div className=" xl:col-span-2">
+          <div className="min-h-screen">
             {" "}
             <AboutMe />
           </div>
-          <div>
+          <div className="min-h-screen">
             {" "}
             <Projects />
           </div>
-          <div>
+          <div className="min-h-screen">
             {" "}
             <Now />
           </div>
-          <div>
+          <div className="min-h-screen">
             {" "}
             <Contact />
           </div>
@@ -80,12 +80,13 @@ const Home = () => {
       <div className="relative">
         <BtnDarkMode className=" top-0 right-0 inline-block " />
         <button
-          className="fixed block bottom-5 right-5 bg-gradient-to-r from-slate-500  p-2 border-2 border-gray-600 rounded-full "
+          className="fixed  bottom-5 right-5 bg-gradient-to-r from-slate-500  p-2 border-2 border-gray-600 rounded-full  "
           onClick={handleScrollToTop}
         >
-          <UpIcon className="absolute" />
+          <UpIcon />
         </button>
       </div>
+      <div className="bg-red-500 h-11 w-11 rounded-full relative flex items-center justify-center"></div>
     </>
   );
 };
