@@ -11,6 +11,13 @@ const Home = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Animación de desplazamiento suave
+    });
+  };
   return (
     <>
       <div className="relative container mx-auto xl:grid xl:grid-cols-2 ">
@@ -19,7 +26,7 @@ const Home = () => {
             Hello World
           </h1>
           <div>
-            <h2 id="top" className="font-light font-sans  text-2xl p-4">
+            <h2 className="font-light font-sans  text-2xl p-4">
               Gonzalo Llanos - Fullstack Developer
             </h2>
             <div className=" grid w-1/3   ">
@@ -74,7 +81,7 @@ const Home = () => {
         <BtnDarkMode className=" top-0 right-0 inline-block " />
         <button
           className="fixed block bottom-5 right-5 bg-gradient-to-r from-slate-500  p-2 border-2 border-gray-600 rounded-full "
-          onClick={() => handleScrollToSection("now")}
+          onClick={handleScrollToTop}
         >
           <UpIcon className="absolute" />
         </button>
