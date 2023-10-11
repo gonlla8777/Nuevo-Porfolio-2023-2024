@@ -3,6 +3,7 @@ import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Now from "../components/Now";
 import Contact from "../components/Contact";
+import { UpIcon } from "../components/svg/Icons";
 const Home = () => {
   const handleScrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -12,60 +13,42 @@ const Home = () => {
   };
   return (
     <>
-      <div>
-        <BtnDarkMode className="fixed block top-0 right-0 " />
-      </div>
-      <button className="fixed block bottom-5 right-5  ">
-        <svg
-          class="w-6 h-6 text-gray-800 dark:text-white"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 14"
-          onClick={() => handleScrollToSection("now")}
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 13V1m0 0L1 5m4-4 4 4"
-          />
-        </svg>
-      </button>
-
-      <div className="container mx-auto xl:grid xl:grid-cols-2 ">
+      <div className="relative container mx-auto xl:grid xl:grid-cols-2 ">
         <div className="xl:fixed top-0 Left-0 p-4 h-screen">
           <h1 className="font-bold font-sans  text-8xl animate-fade-up">
             Hello World
           </h1>
-          <h2 id="top" className="font-light font-sans  text-2xl p-4">
-            Gonzalo Llanos - Fullstack Developer
-          </h2>
-          <h3
-            className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4  hover:text-cyan-400 hover:animate-pulse "
-            onClick={() => handleScrollToSection("aboutMe")}
-          >
-            About me
-          </h3>
-          <h3
-            className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse"
-            onClick={() => handleScrollToSection("projects")}
-          >
-            Project
-          </h3>
-          <h3
-            className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse "
-            onClick={() => handleScrollToSection("now")}
-          >
-            Now
-          </h3>
-          <h3
-            className="cursor-pointer font-medium font-sans text-2xl py-10 p-4 hover:text-cyan-400 hover:animate-pulse "
-            onClick={() => handleScrollToSection("contact")}
-          >
-            Contact
-          </h3>
+          <div>
+            <h2 id="top" className="font-light font-sans  text-2xl p-4">
+              Gonzalo Llanos - Fullstack Developer
+            </h2>
+            <div className=" grid w-1/3   ">
+              <button
+                className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4  hover:text-cyan-400 hover:animate-pulse text-left "
+                onClick={() => handleScrollToSection("aboutMe")}
+              >
+                About me
+              </button>
+              <button
+                className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left"
+                onClick={() => handleScrollToSection("projects")}
+              >
+                Project
+              </button>
+              <button
+                className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left "
+                onClick={() => handleScrollToSection("now")}
+              >
+                Now
+              </button>
+              <button
+                className="cursor-pointer font-medium font-sans text-2xl py-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left "
+                onClick={() => handleScrollToSection("contact")}
+              >
+                Contact
+              </button>
+            </div>
+          </div>
         </div>
         <div></div>
         <div className="h-full">
@@ -86,6 +69,15 @@ const Home = () => {
             <Contact />
           </div>
         </div>
+      </div>
+      <div className="relative">
+        <BtnDarkMode className=" top-0 right-0 inline-block " />
+        <button
+          className="fixed block bottom-5 right-5 bg-gradient-to-r from-slate-500  p-2 border-2 border-gray-600 rounded-full "
+          onClick={() => handleScrollToSection("now")}
+        >
+          <UpIcon className="absolute" />
+        </button>
       </div>
     </>
   );
