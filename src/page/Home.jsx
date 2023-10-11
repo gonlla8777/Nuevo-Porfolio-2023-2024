@@ -20,9 +20,9 @@ const Home = () => {
   };
   return (
     <>
-      <div className="relative container mx-auto xl:grid xl:grid-cols-3  xl:grid-flow-dense">
-        <div className="xl:fixed xl:top-5 xl:left-10 row-span-2 h-screen">
-          <h1 className="font-bold font-sans   text-8xl animate-fade-up">
+      <div className="relative container mx-auto 2xl:grid 2xl:grid-cols-3  2xl:grid-flow-dense">
+        <div className="2xl:fixed 2xl:top-5 2xl:left-10 2xl:row-span-2 2xl:col-span-1 h-screen">
+          <h1 className="font-bold font-sans  text-7xl animate-fade-up">
             Hello World
           </h1>
           <div>
@@ -58,7 +58,7 @@ const Home = () => {
           </div>
         </div>
         <div></div>
-        <div className=" xl:col-span-2">
+        <div className=" 2xl:col-span-2">
           <div className="min-h-screen">
             {" "}
             <AboutMe />
@@ -86,7 +86,6 @@ const Home = () => {
           <UpIcon />
         </button>
       </div>
-      <div className="bg-red-500 h-11 w-11 rounded-full relative flex items-center justify-center"></div>
     </>
   );
 };
