@@ -32,7 +32,7 @@ const About = () => {
       <div className="flex justify-center py-5">
         <img
           src="https://res.cloudinary.com/di5mf85h3/image/upload/v1697091062/gonzalo_szgeyp.jpg"
-          className="w-1/3 hover:w-1/2 transition-all duration-1000 rounded-lg shadow-xl border-cyan-400 border-solid hover:border-cyan-300  border-4 dark:border-violet-800 dark:hover:border-violet-600"
+          className="w-1/3 hover:w-1/2 transition-all duration-1000 rounded-lg shadow-xl border-cyan-400 border-solid hover:border-cyan-300  border-2 dark:border-violet-800 dark:hover:border-violet-600"
         />
       </div>
     </div>
