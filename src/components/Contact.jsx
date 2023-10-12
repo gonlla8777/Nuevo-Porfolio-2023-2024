@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div id="contact" className="h-auto ">
+    <div id="contact" className="h-auto pt-5">
       <h1 className="font-bold font-sans   text-6xl p-2">Contact</h1>
       <h2 className="font-bold font-sans text-3xl p-2 pt-10">React Native</h2>
       <h2 className="font-light font-sans  text-xl p-4">

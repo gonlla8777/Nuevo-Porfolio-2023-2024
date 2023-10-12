@@ -20,45 +20,47 @@ const Home = () => {
   };
   return (
     <>
-      <div className="relative container mx-auto 2xl:grid 2xl:grid-cols-3  2xl:grid-flow-dense">
-        <div className="2xl:fixed 2xl:top-5 2xl:left-10 2xl:row-span-2 2xl:col-span-1 h-screen">
-          <h1 className="font-bold font-sans  text-7xl animate-fade-up">
-            Hello World
-          </h1>
-          <div>
-            <h2 className="font-light font-sans  text-2xl p-4">
-              Gonzalo Llanos - Fullstack Developer
-            </h2>
-            <div className=" grid min:w-1/3   ">
-              <button
-                className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4  hover:text-cyan-400 hover:animate-pulse text-left "
-                onClick={() => handleScrollToSection("aboutMe")}
-              >
-                About me
-              </button>
-              <button
-                className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left"
-                onClick={() => handleScrollToSection("projects")}
-              >
-                Project
-              </button>
-              <button
-                className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left "
-                onClick={() => handleScrollToSection("now")}
-              >
-                Now
-              </button>
-              <button
-                className="cursor-pointer font-medium font-sans text-2xl py-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left "
-                onClick={() => handleScrollToSection("contact")}
-              >
-                Contact
-              </button>
+      <div className="relative container mx-auto md:grid md:grid-cols-3  md:grid-flow-dense">
+        <div className="fixed mdtop-5 md:left-10 md:row-span-2 md:col-span-1 min-h-screen pt-10 pl-10">
+          <div class="fixed">
+            <h1 className="font-bold font-sans  text-7xl animate-fade-up">
+              Hello World
+            </h1>
+            <div>
+              <h2 className="font-light font-sans  text-2xl p-4">
+                Gonzalo Llanos - Fullstack Developer
+              </h2>
+              <div className=" grid min:w-1/3   ">
+                <button
+                  className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4  hover:text-cyan-400 hover:animate-pulse text-left "
+                  onClick={() => handleScrollToSection("aboutMe")}
+                >
+                  About me
+                </button>
+                <button
+                  className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left"
+                  onClick={() => handleScrollToSection("projects")}
+                >
+                  Project
+                </button>
+                <button
+                  className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left "
+                  onClick={() => handleScrollToSection("now")}
+                >
+                  Now
+                </button>
+                <button
+                  className="cursor-pointer font-medium font-sans text-2xl py-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left "
+                  onClick={() => handleScrollToSection("contact")}
+                >
+                  Contact
+                </button>
+              </div>
             </div>
           </div>
         </div>
         <div></div>
-        <div className=" 2xl:col-span-2">
+        <div className=" md:col-span-2 ">
           <div className="min-h-screen">
             {" "}
             <AboutMe />
