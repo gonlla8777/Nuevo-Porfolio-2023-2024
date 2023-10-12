@@ -4,6 +4,7 @@ import Projects from "../components/Projects";
 import Now from "../components/Now";
 import Contact from "../components/Contact";
 import { UpIcon } from "../components/svg/Icons";
+
 const Home = () => {
   const handleScrollToSection = (id) => {
     const element = document.getElementById(id);
