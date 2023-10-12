@@ -22,8 +22,8 @@ const Home = () => {
   return (
     <>
       <div className="relative container mx-auto md:grid md:grid-cols-3  md:grid-flow-dense">
-        <div className="fixed mdtop-5 md:left-10 md:row-span-2 md:col-span-1 min-h-screen pt-10 pl-10">
-          <div class="fixed">
+        <div className="2xl:fixed mdtop-5 md:left-10 md:row-span-2 md:col-span-1 min-h-screen pt-10 pl-10">
+          <div class="">
             <h1 className="font-bold font-sans  text-7xl animate-fade-up">
               Hello World
             </h1>
