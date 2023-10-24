@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <>
       <div className="relative container mx-auto lg:grid lg:grid-cols-3  lg:grid-flow-dense">
-        <div className="lg:fixed top-5 left-0  lg:row-span-2 lg:col-span-1 min-h-screen lg:w-1/3 pt-10 pl-10">
+        <div className="lg:fixed top-5 left-0  lg:row-span-2 lg:col-span-1 min-h-screen lg:w-1/3 pt-10 ">
           <div class="">
             <h1 className="font-bold font-sans  text-7xl animate-fade-up underline dark:decoration-indigo-500 decoration-indigo-300 text-center">
               Hello World
@@ -32,7 +32,7 @@ const Home = () => {
             </h2>
             <div>
               <div className="grid min:w-1/3 pt-12 text-center">
-                <div className="mx-auto grid gap-5">
+                <div className="mx-auto grid gap-4">
                   <button
                     className="cursor-pointer font-medium font-sans text-2xl  mt-3 hover:bg-cyan-200 dark:hover-bg-indigo-600 rounded-full shadow-md dark:shadow-indigo-600/50 w-44 h-14 hover:text-cyan-400 hover:animate-pulse inline-block"
                     onClick={() => handleScrollToSection("aboutMe")}
