@@ -3,10 +3,11 @@ import React from "react";
 const About = () => {
   return (
     <div id="aboutMe" className="h-auto pt-5">
+      
       <h1 className="font-bold font-sans text-6xl p-2 pt-4 animate-fade-up ">
         About Me
       </h1>
-      <h2 className="font-light font-sans text-xl p-4 animate-fade animate-once animate-ease-in animate-duration-[2000ms]">
+      <h2 className="font-light font-sans text-xl p-4 animate-fade animate-once animate-ease-in animate-duration-[2000ms] dark:text-slate-300">
         Soy un programador apasionado por la tecnología y el desarrollo de
         software. Aunque mi formación académica inicial fue en ingeniería civil
         y tengo experiencia en el campo de la construcción, decidí cambiar el
