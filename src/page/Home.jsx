@@ -89,6 +89,17 @@ const Home = () => {
         >
           <UpIcon />
         </button>
+        <div className="w-auto">
+          <ul class="floatingBoxes">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
     </>
   );
