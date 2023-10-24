@@ -28,16 +28,17 @@ const Home = () => {
               Hello World
             </h1>
             <div>
-              <h2 className="font-light font-sans  text-2xl p-4">
+              <h2 className="font-light font-sans  text-2xl p-4 dark:text-gray-300 text-sky-900">
                 Gonzalo Llanos - Fullstack Developer
               </h2>
-              <div className=" grid min:w-1/3   ">
+              <div className=" grid min:w-1/3 ">
                 <button
-                  className="cursor-pointer font-medium font-sans text-2xl pt-20 p-4  hover:text-cyan-400 hover:animate-pulse text-left "
+                  className="cursor-pointer font-medium font-sans text-2xl mt-20 p-4  hover:text-cyan-400 hover:animate-pulse text-left"
                   onClick={() => handleScrollToSection("aboutMe")}
                 >
                   About me
                 </button>
+
                 <button
                   className="cursor-pointer font-medium font-sans text-2xl pt-10 p-4 hover:text-cyan-400 hover:animate-pulse text-left"
                   onClick={() => handleScrollToSection("projects")}
