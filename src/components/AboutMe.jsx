@@ -31,8 +31,8 @@ const About = () => {
       </h2>
       <div className="flex justify-center py-5">
         <img
-          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1697091062/gonzalo_szgeyp.jpg"
-          className="w-1/3 hover:w-1/2 transition-all duration-1000 rounded-lg shadow-xl border-cyan-400 border-solid hover:border-cyan-300  border-2 dark:border-violet-800 dark:hover:border-violet-600"
+          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1698287212/b1494cc6-9d0c-44cf-aa3a-8ba9d42aea3c_kfionj.jpg"
+          className="w-1/3 h hover:w-1/2 transition-all duration-1000 rounded-full shadow-xl  hover:border-cyan-300  border-4 border-cyan-200 dark:border-violet-500 dark:hover:border-violet-600"
         />
       </div>
     </div>
