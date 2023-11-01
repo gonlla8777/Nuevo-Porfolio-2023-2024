@@ -24,7 +24,7 @@ const Home = () => {
       <div className="relative container mx-auto lg:grid lg:grid-cols-3  lg:grid-flow-dense">
         <div className="lg:fixed top-5 left-0  lg:row-span-2 lg:col-span-1 min-h-screen lg:w-1/3 pt-10 ">
           <div class="">
-            <h1 className="font-bold font-sans  text-7xl animate-fade-up underline dark:decoration-indigo-500 decoration-indigo-300 text-center">
+            <h1 className="font-bold  mt-6   font-sans  text-7xl animate-fade-up underline dark:decoration-indigo-500 decoration-indigo-300 text-center">
               Hello World
             </h1>
             <h2 className="font-light font-sans  text-2xl p-4 dark:text-slate-300 text-center">
