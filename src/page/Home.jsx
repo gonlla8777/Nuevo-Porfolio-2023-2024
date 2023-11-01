@@ -30,7 +30,7 @@ const Home = () => {
               Gonzalo Llanos - Fullstack Developer
             </h2>
             <div>
-              <div className="grid min:w-1/3 pt-28 text-center ">
+              <div className="grid min:w-1/3 pt-7 sm:pt-28 text-center ">
                 <div className="mx-auto grid gap-4">
                   <button
                     className="cursor-pointer font-medium font-sans text-2xl  mt-3 hover:bg-cyan-200 dark:hover-bg-indigo-600 rounded-full shadow-md dark:shadow-indigo-600/50 w-44 h-14 hover:text-cyan-400 hover:animate-pulse inline-block"
@@ -53,7 +53,7 @@ const Home = () => {
                     Ahora
                   </button>
 
-                  <div className="flex justify-center space-x-4 inset-x-0 bottom-0 pt-40">
+                  <div className="flex justify-center space-x-4 inset-x-0 bottom-0 pt-10 sm:pt-40">
                     <Ln />
 
                     <Git />
