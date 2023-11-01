@@ -53,9 +53,8 @@ const Home = () => {
                     Ahora
                   </button>
 
-                  <div className="flex justify-center space-x-4 inset-x-0 bottom-0 pt-10 sm:pt-40">
+                  <div className="flex justify-center space-x-4 inset-x-0 bottom-0 pt-14 sm:pt-40">
                     <Ln />
-
                     <Git />
                     <Phone />
                   </div>
