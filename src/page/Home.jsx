@@ -55,6 +55,7 @@ const Home = () => {
 
                   <div className="flex justify-center space-x-4 inset-x-0 bottom-0 pt-40">
                     <Ln />
+
                     <Git />
                     <Phone />
                   </div>
