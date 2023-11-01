@@ -19,63 +19,13 @@ const Home = () => {
     });
   };
 
-  ////////////////////////////////////////////////////////////////
-  const [text, setText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [showCursor, setShowCursor] = useState(true);
-
-  const titleText = "Hello World";
-
-  useEffect(() => {
-    const writeDelay = 10000; // 2 segundos de espera después de escribir el título
-    const deleteDelay = 10000; // 2 segundos de espera antes de borrar el título
-
-    const interval = setInterval(() => {
-      if (!isDeleting && currentIndex <= titleText.length) {
-        setText(titleText.slice(0, currentIndex));
-        setCurrentIndex(currentIndex + 1);
-      } else if (isDeleting && currentIndex >= 0) {
-        setText(titleText.slice(0, currentIndex));
-        setCurrentIndex(currentIndex - 1);
-      }
-
-      if (currentIndex === titleText.length + 1) {
-        setIsDeleting(true);
-        setShowCursor(false);
-
-        // Espera antes de comenzar a borrar
-        setTimeout(() => {
-          setIsDeleting(true);
-          setShowCursor(false);
-        }, writeDelay);
-      } else if (currentIndex === 1) {
-        setIsDeleting(false);
-        setShowCursor(true);
-
-        // Espera antes de comenzar a escribir nuevamente
-        setTimeout(() => {
-          setIsDeleting(false);
-          setShowCursor(true);
-        }, deleteDelay);
-      }
-    }, 100); // Puedes ajustar la velocidad cambiando el valor de 100.
-
-    return () => clearInterval(interval);
-  }, [currentIndex, isDeleting]);
-
   return (
     <>
       <div className="relative container mx-auto lg:grid lg:grid-cols-3  lg:grid-flow-dense">
         <div className="lg:fixed top-5 left-0  lg:row-span-2 lg:col-span-1 min-h-screen lg:w-1/3 pt-10 ">
           <div class="">
-            <h1 className="font-bold mt-6 font-sans text-7xl underline dark:decoration-indigo-500 decoration-indigo-300 text-center">
-              {text}
-              <span
-                className={showCursor ? "animate-blink-caret" : "invisible"}
-              >
-                |
-              </span>
+            <h1 className="font-bold  mt-6   font-sans  text-7xl animate-fade-up underline dark:decoration-indigo-500 decoration-indigo-300 text-center">
+              Hello World
             </h1>
             <h2 className="font-light font-sans  text-2xl p-4 dark:text-slate-300 text-center">
               Gonzalo Llanos - Fullstack Developer
