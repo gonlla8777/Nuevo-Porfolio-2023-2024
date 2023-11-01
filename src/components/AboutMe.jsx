@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div id="aboutMe" className="h-auto pt-5">
       <h1 className="font-bold font-sans text-6xl p-2 pt-4 animate-fade-up  underline dark:decoration-indigo-500 decoration-indigo-300">
-        Sobre Mi
+        Sobre Mí
       </h1>
       <h2 className="font-light font-sans text-xl p-4 animate-fade animate-once animate-ease-in animate-duration-[2000ms] dark:text-slate-300">
         Soy un programador apasionado por la tecnología y el desarrollo de
