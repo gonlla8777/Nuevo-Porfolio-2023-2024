@@ -16,7 +16,7 @@ const Now = () => {
       <div className="flex py-2 justify-center">
         <img
           src="https://res.cloudinary.com/di5mf85h3/image/upload/v1698845294/home_pniigh.png"
-          className="w-1/2 h hover:w-5/6 transition-all duration-1000 rounded-xl shadow-xl  hover:border-cyan-300  border-4 border-cyan-200 dark:border-violet-500 dark:hover:border-violet-600"
+          className="w-1/3 h hover:scale-150 transition-all duration-1000 rounded-xl shadow-xl  hover:border-cyan-300  border-4 border-cyan-200 dark:border-violet-500 dark:hover:border-violet-600"
         />
       </div>
     </div>

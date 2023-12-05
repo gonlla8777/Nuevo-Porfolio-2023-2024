@@ -5,29 +5,30 @@ const Project = () => {
         Proyectos
       </h1>
       <h2 className="font-bold font-sans text-3xl p-2 pt-10 underline dark:decoration-indigo-500 decoration-indigo-300 decoration-3">
-        Pokédex
+        Party Now!
       </h2>
       <h2 className="font-light font-sans text-xl p-4 animate-fade animate-once animate-ease-in animate-duration-[2000ms] dark:text-slate-300">
-        Mi primer proyecto como desarrollador fue una PokeApi en React Native,
-        contaba además con otras funcionalidades, como por ejemplo la creación
-        de tareas con sus respectivos checks y una visualización de las tareas
-        pendientes. También integré la ubicación en tiempo real a través de un
-        framework.
+        Party Now es una aplicación innovadora desarrollada en React Native que
+        te permite explorar y descubrir la escena de la fiesta en tu ciudad de
+        manera rápida y sencilla. Desde boliches nocturnos vibrantes hasta
+        eventos exclusivos, nuestra aplicación te conecta con las experiencias
+        más emocionantes en tiempo real.
       </h2>
-      <div className="flex  justify-center space-x-4 pt-2">
+      <div className="flex justify-between">
         <img
-          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1698842175/porfolioReact_pyqktb.png"
-          className="w-1/4 rounded-3xl shadow-xl "
+          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1701733210/Screenshot_1701732424_su42um.png"
+          className="w-1/4 hover:scale-110 rounded-3xl shadow-xl left-20 top-0 transition-transform duration-300 ease-in-out"
         />
         <img
-          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1698842171/porforlioReact2_d9kqdw.png"
-          className="w-1/4 rounded-xl shadow-xl "
+          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1701733259/Screenshot_1701732385_istnuo.png"
+          className="w-1/4 hover:scale-110 rounded-xl shadow-xl transition-transform duration-300 ease-in-out"
         />
         <img
-          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1698842173/porforlioReact3_c8eibu.png"
-          className="w-1/4 rounded-xl shadow-xl "
+          src="https://res.cloudinary.com/di5mf85h3/image/upload/v1701733311/Screenshot_1701732392_yuwcsv.png"
+          className="w-1/4 rounded-xl shadow-xl hover:scale-110 transition-transform duration-300 ease-in-out"
         />
       </div>
+
       <h2 className="font-bold font-sans text-3xl p-2 pt-10 underline dark:decoration-indigo-500 decoration-indigo-300 decoration-3">
         Rent-fy
       </h2>
