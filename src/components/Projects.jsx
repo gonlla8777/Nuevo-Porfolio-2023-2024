@@ -14,7 +14,7 @@ const Project = () => {
         eventos exclusivos, nuestra aplicación te conecta con las experiencias
         más emocionantes en tiempo real.
       </h2>
-      <div className="flex justify-between">
+      <div className="flex justify-around ">
         <img
           src="https://res.cloudinary.com/di5mf85h3/image/upload/v1701733210/Screenshot_1701732424_su42um.png"
           className="w-1/4 hover:scale-110 rounded-3xl shadow-xl left-20 top-0 transition-transform duration-300 ease-in-out"
