@@ -59,6 +59,20 @@ const UpIcon = () => {
     </svg>
   );
 };
+const EsIcon = () => {
+  return (
+    <button className="w-6 h-6 text-gray-800 dark:text-white rounded-full font-medium">
+      Es
+    </button>
+  );
+};
+const EnIcon = () => {
+  return (
+    <button className="w-6 h-6 text-gray-800 dark:text-white rounded-full font-medium">
+      En
+    </button>
+  );
+};
 const Ln = () => {
   const linkedinProfileUrl =
     "https://www.linkedin.com/in/gonzalo-miguel-llanos-bb2b64224/";
@@ -135,4 +149,4 @@ const Phone = () => {
     </a>
   );
 };
-export { MoonIcon, SunIcon, UpIcon, Ln, Git, Phone };
+export { MoonIcon, SunIcon, UpIcon, Ln, Git, Phone, EsIcon, EnIcon };

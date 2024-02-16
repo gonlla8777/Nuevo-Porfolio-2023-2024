@@ -2,9 +2,31 @@ import BtnDarkMode from "../components/theme/theme";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Now from "../components/Now";
-import { UpIcon, Ln, Git, Phone } from "../components/svg/Icons";
+import {
+  UpIcon,
+  Ln,
+  Git,
+  Phone,
+  EsIcon,
+  EnIcon,
+} from "../components/svg/Icons";
 import React, { useState, useEffect } from "react";
+import {
+  getStoredLanguage,
+  setLanguage,
+} from "../components/languageService/languageService";
+import data from "../assets/utils/data/data.json";
+
 const Home = () => {
+  const [language, setLanguageState] = useState(getStoredLanguage());
+  useEffect(() => {
+    setLanguage(language);
+  }, [language]);
+
+  const handleLanguageChange = (selectedLanguage) => {
+    setLanguageState(selectedLanguage);
+  };
+
   const handleScrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -18,7 +40,7 @@ const Home = () => {
       behavior: "smooth", // Animación de desplazamiento suave
     });
   };
-
+  console.log(data[language]);
   return (
     <>
       <div className="relative container mx-auto lg:grid lg:grid-cols-3  lg:grid-flow-dense">
@@ -37,21 +59,21 @@ const Home = () => {
                     className="cursor-pointer font-medium font-sans text-2xl  mt-3 hover:bg-cyan-200 dark:hover-bg-indigo-600 rounded-full shadow-md dark:shadow-indigo-600/50 w-44 h-14 hover:text-cyan-400 hover:animate-pulse inline-block"
                     onClick={() => handleScrollToSection("aboutMe")}
                   >
-                    Sobre Mí
+                    {data[language].home.aboutMe}
                   </button>
 
                   <button
                     className="cursor-pointer font-medium font-sans text-2xl mt-3 hover:bg-cyan-200 dark:hover-bg-indigo-600 rounded-full shadow-md dark:shadow-indigo-600/50 w-44 h-14 hover:text-cyan-400 hover:animate-pulse inline-block"
                     onClick={() => handleScrollToSection("projects")}
                   >
-                    Proyectos
+                    {data[language].home.projects}
                   </button>
 
                   <button
                     className="cursor-pointer font-medium font-sans text-2xl mt-3 hover:bg-cyan-200 dark:hover-bg-indigo-600 rounded-full shadow-md dark:shadow-indigo-600/50 w-44 h-14 hover:text-cyan-400 hover:animate-pulse inline-block"
                     onClick={() => handleScrollToSection("now")}
                   >
-                    Ahora
+                    {data[language].home.now}
                   </button>
 
                   <div className="flex justify-center space-x-4 inset-x-0 bottom-0 pt-14 sm:pt-40">
@@ -68,20 +90,33 @@ const Home = () => {
         <div className=" lg:col-span-2 pl-5 ">
           <div className="min-h-screen">
             {" "}
-            <AboutMe />
+            <AboutMe data={data[language].aboutMe} />
           </div>
           <div className="min-h-screen">
             {" "}
-            <Projects />
+            <Projects data={data[language].projects} />
           </div>
           <div className="min-h-screen">
             {" "}
-            <Now />
+            <Now data={data[language].now} />
           </div>
         </div>
       </div>
       <div className="relative">
         <BtnDarkMode className=" top-0 right-0 inline-block " />
+
+        <button className="fixed  bottom-20 right-5 bg-gradient-to-r from-slate-500  p-2 border-2 border-gray-600 rounded-full  ">
+          {language === "english" && (
+            <button onClick={() => handleLanguageChange("spanish")}>
+              <EsIcon />
+            </button>
+          )}
+          {language === "spanish" && (
+            <button onClick={() => handleLanguageChange("english")}>
+              <EnIcon />
+            </button>
+          )}
+        </button>
         <button
           className="fixed  bottom-5 right-5 bg-gradient-to-r from-slate-500  p-2 border-2 border-gray-600 rounded-full  "
           onClick={handleScrollToTop}

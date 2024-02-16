@@ -1,0 +1,50 @@
+{
+  "spanish": {
+    "home": {
+      "aboutMe": "Sobre Mí",
+      "projects": "Proyectos",
+      "now": "Ahora"
+    },
+    "aboutMe": {
+      "title": "Sobre Mí",
+      "body": "Soy un programador apasionado por la tecnología y el desarrollo de software. Aunque mi formación académica inicial fue en ingeniería civil y tengo experiencia en el campo de la construcción, decidí cambiar el rumbo de mi vida al sentirme atraído por la programación. <br /> Durante mi formación como programador, desarrollé habilidades en diferentes lenguajes de programación y herramientas técnicas. <br /> A través de mi experiencia en la construcción y mi capacidad para resolver problemas complejos, he desarrollado habilidades transferibles, como el pensamiento analítico y la atención al detalle, que son valiosas en el campo de la programación. <br /> Estoy emocionado por aplicar mis conocimientos y experiencia en un entorno enfocado en el desarrollo de software. Mi objetivo es seguir creciendo profesionalmente, aprender nuevas tecnologías y contribuir de manera significativa en proyectos desafiantes."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "subtitle1": "Party Now",
+      "body1": " Party Now es una aplicación innovadora desarrollada en React Native que te permite explorar y descubrir la escena de la fiesta en tu ciudad de manera rápida y sencilla. Desde boliches nocturnos vibrantes hasta eventos exclusivos, nuestra aplicación te conecta con las experiencias más emocionantes en tiempo real.",
+      "subtitle2": "Rent-fy",
+      "body2": "Este fue mi primer proyecto en que formé parte de un equipo. <br /> Rent-ify es un proyecto web innovador que ofrece a sus usuarios la posibilidad de alquilar productos que no están en uso, brindando así una alternativa sostenible y económica para aquellos que buscan acceder a artículos sin tener que comprarlos. La idea detrás de Rent-ify es aprovechar los recursos infrautilizados y fomentar la economía colaborativa, permitiendo a las personas ganar dinero extra alquilando sus productos mientras satisfacen las necesidades de otros usuarios.",
+      "subtitle3": "Pájaros Caídos",
+      "body3": "Acumulé experiencia laboral como programador en la ONG Pájaros Caídos. Mi principal función dentro de esta organización es la de desarrollador frontend. <br /> A través de esta experiencia, tengo la oportunidad de combinar mi pasión por la programación con un propósito aún más significativo: contribuir al trabajo valioso que realiza Pájaros Caídos en beneficio de la comunidad."
+    },
+    "now": {
+      "title": "Ahora",
+      "body": "Actualmente colaboro de forma activa en Zenify Labs, una empresa comprometida con la excelencia en el diseño y desarrollo web. En Zenify Labs, me desempeño como programador, contribuyendo al desarrollo de páginas web innovadoras y funcionales que satisfacen las necesidades de nuestros clientes."
+    }
+  },
+  "english": {
+    "home": {
+      "aboutMe": "About Me",
+      "projects": "Projects",
+      "now": "Now"
+    },
+    "aboutMe": {
+      "title": "About Me",
+      "body": "I am a programmer passionate about technology and software development. Although my initial academic background was in civil engineering and I have experience in the construction field, I decided to change the course of my life when I felt drawn to programming. <br /> During my training as a programmer, I developed skills in different programming languages and technical tools. <br /> Through my experience in construction and my ability to solve complex problems, I have developed transferable skills, such as analytical thinking and attention to detail, which are valuable in the field of programming. <br /> I am excited to apply my knowledge and experience in an environment focused on software development. My goal is to continue growing professionally, learning new technologies, and making a meaningful contribution to challenging projects."
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle1": "Party Now",
+      "body1": "Party Now is an innovative application developed in React Native that allows you to explore and discover the party scene in your city quickly and easily. From vibrant nightclubs to exclusive events, our application connects you with the most exciting experiences in real-time.",
+      "subtitle2": "Rent-fy",
+      "body2": "This was my first project as part of a team. <br /> Rent-fy is an innovative web project that offers its users the possibility to rent products that are not in use, thus providing a sustainable and economical alternative for those looking to access items without having to buy them. The idea behind Rent-fy is to leverage underutilized resources and promote the sharing economy, allowing people to earn extra money by renting out their products while meeting the needs of other users.",
+      "subtitle3": "Pájaros Caídos",
+      "body3": "I gained work experience as a programmer at the NGO Pájaros Caídos. My main role within this organization is as a frontend developer. <br /> Through this experience, I have the opportunity to combine my passion for programming with an even more meaningful purpose: contributing to the valuable work that Pájaros Caídos does for the community."
+    },
+    "now": {
+      "title": "Now",
+      "body": "I am currently actively collaborating at Zenify Labs, a company committed to excellence in web design and development. At Zenify Labs, I work as a programmer, contributing to the development of innovative and functional web pages that meet the needs of our clients."
+    }
+  }
+}
